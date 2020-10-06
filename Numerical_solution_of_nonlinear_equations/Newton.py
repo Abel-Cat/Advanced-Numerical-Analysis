@@ -2,7 +2,7 @@
 Author: Abel-Cat
 Date: 2020-10-05 23:12:12
 LastEditors: Abel-Cat
-LastEditTime: 2020-10-06 22:42:07
+LastEditTime: 2020-10-06 22:48:47
 Motto: May the force be with you.
 '''
 
@@ -39,24 +39,3 @@ if __name__ == "__main__":
     e = 0.001
     ans=Newton(x0,N,e)
     print(ans)
-
-    # k=0
-    # err=1
-    # xk=x0
-    # j=J(xk)
-    # f=F(xk)
-    # print(j)
-    # print('------------------')
-    # print(f.shape)
-    # while k<N and err>e:
-    #     dk = np.linalg.solve(J(xk), -F(xk))
-    #     print (dk)
-    #     err = np.linalg.norm(dk)
-    #     xk1 = xk+dk
-    #     k = k+1
-    #     xk = xk1
-
-    # print(xk)
-
-
-    
