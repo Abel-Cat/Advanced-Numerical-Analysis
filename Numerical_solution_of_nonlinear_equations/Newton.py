@@ -6,7 +6,6 @@ LastEditTime: 2020-10-06 22:48:47
 Motto: May the force be with you.
 '''
 
-from __future__ import print_function
 import numpy as np
 
 def F(x):
