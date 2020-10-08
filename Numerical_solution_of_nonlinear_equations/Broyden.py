@@ -2,7 +2,7 @@
 Author: Abel-Cat
 Date: 2020-10-06 22:52:52
 LastEditors: Abel-Cat
-LastEditTime: 2020-10-07 21:42:07
+LastEditTime: 2020-10-07 22:06:02
 Motto: May the force be with you.
 '''
 import numpy as np
@@ -30,7 +30,6 @@ def Broyden(x0 ,A0 , N , e):
         sk = xk1-xk
         # 注意: 在python numpy 中行向量乘以列向量 要用 @
         sksk =  np.transpose(sk) @ sk
-        print(sksk)
         add_A = np.dot( (yk-np.dot(Ak,sk)) , np.transpose(sk) ) / sksk
         Ak=Ak+add_A
         k = k+1
