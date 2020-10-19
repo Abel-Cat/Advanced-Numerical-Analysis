@@ -2,11 +2,10 @@
 Author: Abel-Cat
 Date: 2020-10-08 16:04:40
 LastEditors: Abel-Cat
-LastEditTime: 2020-10-08 16:41:33
+LastEditTime: 2020-10-08 17:03:49
 Motto: May the force be with you.
 '''
 
-import re
 import numpy as np
 
 def F(x):
