@@ -2,7 +2,7 @@
 Author: Abel-Cat
 Date: 2020-10-15 21:17:59
 LastEditors: Abel-Cat
-LastEditTime: 2020-10-19 16:19:00
+LastEditTime: 2020-10-19 23:27:04
 Motto: May the force be with you.
 '''
 
@@ -70,9 +70,11 @@ def evaluate(a,y):
 if __name__ == "__main__":
     filename = './Machine_learning/Linear_regression/train.txt'
     x,y = load_data(filename=filename)
-    x = np.expand_dims(x,axis= 0)
+    # 增加数据的维数  原来为
+    # 以为一维数据无法进行矩阵计算  我们使用
+    x = np.expand_dims(x , axis= 0)
     x = np.insert( x, 1 , values=np.ones([300]) ,axis =0)
-    y = y.reshape(300,1)
+    y = np.expand_dims(y , axis=1)
     w = LSM(x,y)
     y_pre = np.transpose(x) @ w
     loss = evaluate( y, y_pre )
